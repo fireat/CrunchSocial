@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireApp</title>
+    <style>
+        .username {
+            margin-left: 28.5%;
+            padding: 1%;
+            width: 40%;
+            margin-top: 2%;
+        }
+
+        .roomname {
+            margin-left: 28.5%;
+            padding: 1%;
+            width: 40%;
+            margin-top: 4%;
+        }
+
+        .submit {
+            margin-left: 40%;
+            padding: 1%;
+            width: 20%;
+            margin-top: 5%;
+        }
+
+        .heading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5em;
+            margin-top: 7%;
+            margin-left: 38%;
+        }
+
+        body {
+            background-image: url("images/Fire.png");
+            background-repeat: no-repeat, repeat;
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/Fire.png"/>
+    <div class="content">
+        <h1 class="heading">FireApp</h1>
+        <form action="/room" method="POST">
+            <input type="text" placeholder="Enter your Name" class="username" name="username" required>
+            <br/>
+            <input type="password" placeholder="Enter Room Name" class="roomname" name="roomname" required>
+            <input type="submit" value="Enter" class="submit">
+        </form>
+        <br/>
+        <br/>
+    </div>
+</body>
+</html>
